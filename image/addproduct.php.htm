@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style>
+  body {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with 90% opacity */
+    /* Your other container styles */
+}
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f44336;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #d32f2f;
+}
+  </style>
+  
+  </head><body>
+  <form method="POST" action="" enctype="multipart/form-data">
+    <section class="container">
+     
+      <center>  
+    <h2>  
+    Add product  
+    </h2>  
+    
+
+    
+        <div class="input-box">
+        <div class="selection-box">
+        </div><div class="input-box">
+          </div><div class="input-box">
+          </div><div class="selection-box">
+        </div><div class="input-box">
+          </div><div class="input-box">
+        </div><div class="input-box">
+        </div><div class="input-box">
+        </div><div class="button">
+       </div><table border="3" align="center">
+
+        <tbody><tr><td>Enter the product name </td><td><input type="text" name="name" placeholder="Product name" required=""></td></tr>
+        
+
+        <tr><td><label for="company">Company name</label></td><td>
+    <select name="company" id="company">
+   <option value=" " selected="selected">----select----</option>
+   <option value="bmw">BMW</option>
+   <option value="audi">Audi</option>
+   <option value="volvo">Volvo</option>
+   <option value="rollsroyce">Rolls-Royce</option></select></td></tr>
+      
+        
+           
+        <tr><td><label>Vehicle model</label></td><td>
+          <input type="text" name="model" placeholder="Enter vechil model" required=""></td></tr>
+        
+
+          <tr><td><label>Model Year</label></td><td>
+          <input type="number" name="year" placeholder="Enter model year" required=""></td></tr>
+        
+          
+        
+        
+
+        
+        <tr><td><label for="cat">Category</label></td><td>
+    <select name="cat" id="cat">
+   <option value=" " selected="selected">----select----</option>
+   <option value="mirror">Mirror</option>
+   <option value="light">Light</option>
+   <option value="engine">Engine part</option>
+   <option value="wheel">Wheels</option>
+   <option value="body">Body part</option>
+   <option value="other">Other</option>
+     </select> </td></tr>
+        
+
+        <tr><td><label>Color</label></td><td>
+          <input type="text" name="color" placeholder="Enter color" required=""></td></tr>
+        
+
+
+        <tr><td><label>Price</label></td><td>
+          <input type="number" name="price" placeholder="Enter the price" required=""></td></tr>
+        
+        
+
+        <tr><td><label>Stock</label></td><td>
+          <input type="number" name="stock" placeholder="Enter number of item" required=""></td></tr>
+        
+        <tr><td><label>Image</label></td><td>
+          <input type="file" name="image"></td></tr>
+        
+        
+
+        <tr><td> <center><input type="submit" name="btnsave" value="Save"></center></td><td>
+        <input type="submit" name="btncancel" value="Cancel"></td></tr><tr>
+         
+        
+</tr></tbody></table>
+
+
+    </div></center></section></form>
+
+    
+
+  <br><br><br>
+  
+
+
+  <table border="1"><tbody><tr><th>Product name</th><th>Company</th><th>Vehicle model</th><th>Model Year</th><th>Category</th><th>Color</th><th>Price</th><th>Stock</th><th>Image</th><th>Action</th></tr><tr><td>CLUTH DISK</td><td>bmw</td><td>BMW i4</td><td>2023</td><td>engine</td><td>silver</td><td>350</td><td>2</td><td><img height="150" width="150" src="addproduct.php_files/clutch%20disc.jpg"></td><td><a href="https://user8.nirmalamca.com/Spareshop/project/admin/delete.php?id=35" class=" btn" onclick="return confirm('Are you sure you want to Delete this record?');">Delete</a>
+    <a href="https://user8.nirmalamca.com/Spareshop/project/admin/update.php?id=35" class=" btn">Update</a></td></tr><tr><td>OIL FILTER</td><td>volvo</td><td>VOLVO C40</td><td>2022</td><td>engine</td><td>BLACK</td><td>299</td><td>3</td><td><img height="150" width="150" src="addproduct.php_files/oil%20filter.jpg"></td><td><a href="https://user8.nirmalamca.com/Spareshop/project/admin/delete.php?id=36" class=" btn" onclick="return confirm('Are you sure you want to Delete this record?');">Delete</a>
+    <a href="https://user8.nirmalamca.com/Spareshop/project/admin/update.php?id=36" class=" btn">Update</a></td></tr><tr><td>AIR FILTER</td><td>volvo</td><td>VOLVO C40</td><td>2022</td><td>other</td><td>RED</td><td>18000</td><td>3</td><td><img height="150" width="150" src="addproduct.php_files/air%20filter.jpg"></td><td><a href="https://user8.nirmalamca.com/Spareshop/project/admin/delete.php?id=33" class=" btn" onclick="return confirm('Are you sure you want to Delete this record?');">Delete</a>
+    <a href="https://user8.nirmalamca.com/Spareshop/project/admin/update.php?id=33" class=" btn">Update</a></td></tr><tr><td>SPARK PLUG</td><td>bmw</td><td>BMW X1</td><td>2018</td><td>engine</td><td>SILVER</td><td>200</td><td>2</td><td><img height="150" width="150" src="addproduct.php_files/spark%20plug.jpg"></td><td><a href="https://user8.nirmalamca.com/Spareshop/project/admin/delete.php?id=37" class=" btn" onclick="return confirm('Are you sure you want to Delete this record?');">Delete</a>
+    <a href="https://user8.nirmalamca.com/Spareshop/project/admin/update.php?id=37" class=" btn">Update</a></td></tr><tr><td>SPARK PLUG</td><td>audi</td><td>AUDI  Quattro</td><td>1999</td><td>engine</td><td>silver</td><td>270</td><td>1</td><td><img height="150" width="150" src="addproduct.php_files/spark%20plug2.jpg"></td><td><a href="https://user8.nirmalamca.com/Spareshop/project/admin/delete.php?id=38" class=" btn" onclick="return confirm('Are you sure you want to Delete this record?');">Delete</a>
+    <a href="https://user8.nirmalamca.com/Spareshop/project/admin/update.php?id=38" class=" btn">Update</a></td></tr><tr><td>OIL PUMP</td><td>rollsroyce</td><td>Rolls-Royce Ghost</td><td>2012</td><td>engine</td><td>SILVER</td><td>470</td><td>2</td><td><img height="150" width="150" src="addproduct.php_files/oil%20pump.jpg"></td><td><a href="https://user8.nirmalamca.com/Spareshop/project/admin/delete.php?id=39" class=" btn" onclick="return confirm('Are you sure you want to Delete this record?');">Delete</a>
+    <a href="https://user8.nirmalamca.com/Spareshop/project/admin/update.php?id=39" class=" btn">Update</a></td></tr><tr><td>AIR FILTER</td><td>rollsroyce</td><td>Rolls-Royce Ghost</td><td>2012</td><td>other</td><td>YELLOW</td><td>490</td><td>2</td><td><img height="150" width="150" src="addproduct.php_files/air%20filter.avif"></td><td><a href="https://user8.nirmalamca.com/Spareshop/project/admin/delete.php?id=40" class=" btn" onclick="return confirm('Are you sure you want to Delete this record?');">Delete</a>
+    <a href="https://user8.nirmalamca.com/Spareshop/project/admin/update.php?id=40" class=" btn">Update</a></td></tr><tr><td>LIGHT</td><td>volvo</td><td>VOLVO C40</td><td>2022</td><td>light</td><td>WHITE</td><td>344</td><td>0</td><td><img height="150" width="150" src="addproduct.php_files/light%20bmw.avif"></td><td><a href="https://user8.nirmalamca.com/Spareshop/project/admin/delete.php?id=49" class=" btn" onclick="return confirm('Are you sure you want to Delete this record?');">Delete</a>
+    <a href="https://user8.nirmalamca.com/Spareshop/project/admin/update.php?id=49" class=" btn">Update</a></td></tr><tr><td>HEAD LAMP UNIT</td><td>bmw</td><td>BMW M3 E90</td><td>2002</td><td>light</td><td>WHITE</td><td>189</td><td>1</td><td><img height="150" width="150" src="addproduct.php_files/head%20lamp%20unit.jpg"></td><td><a href="https://user8.nirmalamca.com/Spareshop/project/admin/delete.php?id=44" class=" btn" onclick="return confirm('Are you sure you want to Delete this record?');">Delete</a>
+    <a href="https://user8.nirmalamca.com/Spareshop/project/admin/update.php?id=44" class=" btn">Update</a></td></tr><tr><td>GEAR BEARING</td><td>audi</td><td>AUDI  Quattro</td><td>1999</td><td>engine</td><td>SILVER</td><td>611</td><td>1</td><td><img height="150" width="150" src="addproduct.php_files/gear%20and%20bearing.jpg"></td><td><a href="https://user8.nirmalamca.com/Spareshop/project/admin/delete.php?id=43" class=" btn" onclick="return confirm('Are you sure you want to Delete this record?');">Delete</a>
+    <a href="https://user8.nirmalamca.com/Spareshop/project/admin/update.php?id=43" class=" btn">Update</a></td></tr><tr><td>Radiator support</td><td>audi</td><td>Audi A3</td><td>2000</td><td>body</td><td>Black</td><td>199</td><td>2</td><td><img height="150" width="150" src="addproduct.php_files/4Radiator-support-01-1-800x356.jpg"></td><td><a href="https://user8.nirmalamca.com/Spareshop/project/admin/delete.php?id=54" class=" btn" onclick="return confirm('Are you sure you want to Delete this record?');">Delete</a>
+    <a href="https://user8.nirmalamca.com/Spareshop/project/admin/update.php?id=54" class=" btn">Update</a></td></tr><tr><td>LIGHT</td><td>rollsroyce</td><td>Rolls-Royce Ghost</td><td>2012</td><td>light</td><td>WHITE</td><td>511</td><td>0</td><td><img height="150" width="150" src="addproduct.php_files/light%20ro.avif"></td><td><a href="https://user8.nirmalamca.com/Spareshop/project/admin/delete.php?id=47" class=" btn" onclick="return confirm('Are you sure you want to Delete this record?');">Delete</a>
+    <a href="https://user8.nirmalamca.com/Spareshop/project/admin/update.php?id=47" class=" btn">Update</a></td></tr><tr><td>AIR FILTER</td><td>bmw</td><td>BMW X1</td><td>2018</td><td>other</td><td>BLACK</td><td>366</td><td>3</td><td><img height="150" width="150" src="addproduct.php_files/air%20filter.avif"></td><td><a href="https://user8.nirmalamca.com/Spareshop/project/admin/delete.php?id=50" class=" btn" onclick="return confirm('Are you sure you want to Delete this record?');">Delete</a>
+    <a href="https://user8.nirmalamca.com/Spareshop/project/admin/update.php?id=50" class=" btn">Update</a></td></tr><tr><td>Steering whell</td><td>volvo</td><td>Volvo c40</td><td>2002</td><td>body</td><td>Black</td><td>140</td><td>0</td><td><img height="150" width="150" src="addproduct.php_files/24Steering-wheel-01-800x356.webp"></td><td><a href="https://user8.nirmalamca.com/Spareshop/project/admin/delete.php?id=57" class=" btn" onclick="return confirm('Are you sure you want to Delete this record?');">Delete</a>
+    <a href="https://user8.nirmalamca.com/Spareshop/project/admin/update.php?id=57" class=" btn">Update</a></td></tr><tr><td>BALL BEARING</td><td>bmw</td><td>BMW i4</td><td>2023</td><td>engine</td><td>SILVER</td><td>255</td><td>2</td><td><img height="150" width="150" src="addproduct.php_files/ball%20bearing.jpg"></td><td><a href="https://user8.nirmalamca.com/Spareshop/project/admin/delete.php?id=53" class=" btn" onclick="return confirm('Are you sure you want to Delete this record?');">Delete</a>
+    <a href="https://user8.nirmalamca.com/Spareshop/project/admin/update.php?id=53" class=" btn">Update</a></td></tr><tr><td>Tail light </td><td>bmw</td><td>BMW 507</td><td>1994</td><td>light</td><td>Red</td><td>114</td><td>10</td><td><img height="150" width="150" src="addproduct.php_files/12Tail-lights-600x400.webp"></td><td><a href="https://user8.nirmalamca.com/Spareshop/project/admin/delete.php?id=56" class=" btn" onclick="return confirm('Are you sure you want to Delete this record?');">Delete</a>
+    <a href="https://user8.nirmalamca.com/Spareshop/project/admin/update.php?id=56" class=" btn">Update</a></td></tr><tr><td>Steering whell</td><td>volvo</td><td>Volvo c40</td><td>2002</td><td>body</td><td>Black</td><td>140</td><td>8</td><td><img height="150" width="150" src="addproduct.php_files/24Steering-wheel-01-800x356.webp"></td><td><a href="https://user8.nirmalamca.com/Spareshop/project/admin/delete.php?id=58" class=" btn" onclick="return confirm('Are you sure you want to Delete this record?');">Delete</a>
+    <a href="https://user8.nirmalamca.com/Spareshop/project/admin/update.php?id=58" class=" btn">Update</a></td></tr></tbody></table>  </body></html>
